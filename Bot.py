@@ -33,7 +33,7 @@ class SimpleHandler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-type", "text/plain")
         self.end_headers()
-        self.wfile.write(b"Bot is alive! 🚀")
+        self.wfile.write(b"Bot is alive!")
 
 def run_keep_alive_server():
     port = int(os.environ.get("PORT", 10000))  # Render asigna PORT automáticamente
